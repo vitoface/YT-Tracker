@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YT Decision Tracker",
+  "version": "1.0",
+  "description": "Monitor active search vs passive reception",
+  "permissions": [ "storage" ],
+  "content_scripts": [
+    {
+      "matches": [ "*://www.youtube.com/*" ],
+      "js": [ "content.js" ]
+    }
+  ]
+}
